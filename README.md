@@ -12,5 +12,5 @@ Repositorio enfocado al Front-End
 
 - Jairo Jair Toro Novellis
 - Noah Zapata Puerta
-- 
+- Omar Andrés Vega Atencia
 - 
