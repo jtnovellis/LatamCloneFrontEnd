@@ -8,9 +8,9 @@ Repositorio enfocado al Front-End
     hemos decido hacer un clon de su aplicación web, donde implementaremos
     todas las funcionalidades que poseen para brindar el servicio.
 
-# Members
 
+# Members
 - Jairo Jair Toro Novellis
 - Noah Zapata Puerta
 - Omar Andrés Vega Atencia
-- 
+- Daniel Moreno
