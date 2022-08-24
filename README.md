@@ -11,6 +11,6 @@ Repositorio enfocado al Front-End
 # Members
 
 - Jairo Jair Toro Novellis
-- Noah Zapata Puerta
-- Omar Andrés Vega Atencia
+- 
+- 
 - 
