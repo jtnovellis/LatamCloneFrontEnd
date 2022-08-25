@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "LATAM Sans";
+  src: url(../fonts/latam_sans_bold-webfont.woff) formar('woff');
+  font-weight: bold;
+}
+@font-face {
+  font-family: "LATAM Sans";
+  src: url(../fonts/latam_sans_light_italic-webfont.woff) formar('woff');
+  font-weight: light;
+  font-style: italic;
+}
+@font-face {
+  font-family: "LATAM Sans";
+  src: url(../fonts/latam_sans_light-webfont.woff) formar('woff');
+  font-weight: light;
+}
+@font-face {
+  font-family: "LATAM Sans";
+  src: url(../fonts/latam_sans_regular_italic-webfont.woff) formar('woff');
+  font-style: italic;
+}
+@font-face {
+  font-family: "LATAM Sans";
+  src: url(../fonts/latam_sans_regular-webfont.woff) formar('woff');
+}
