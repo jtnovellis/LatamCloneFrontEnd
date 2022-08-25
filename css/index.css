@@ -78,9 +78,6 @@ nav > ul > li {
   height: 100%;
   list-style: none;
   position: relative;
-  width: fit-content;
-  display: flex;
-  align-items: center;
 }
 
 nav > ul > li > a {
@@ -95,3 +92,14 @@ nav > ul > li > a {
   cursor: pointer;
 }
 
+.container-login {
+  color: #fff;
+  text-decoration: none;
+}
+
+.container-login > a {
+  color: #fff;
+  padding: 0 50px;
+  font-size: 14px;
+  text-decoration: none;
+}
