@@ -24,6 +24,11 @@
   src: url(../fonts/latam_sans_regular-webfont.woff) formar('woff');
 }
 
+:root {
+  --main-bg-color:rgb(16, 0, 79);
+  --main-font-family: "LATAM Sans", "Trebuchet MS", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -75,9 +80,19 @@ nav > ul {
 }
 
 nav > ul > li {
-  height: 100%;
+  height: 34px;
   list-style: none;
   position: relative;
+  width: fit-content;
+}
+nav > ul > li > a:hover {
+  background-color: rgb(39, 47, 107);
+  border-radius: 20px;
+}
+
+nav > ul > li > a:active {
+  background-color: rgb(214, 218, 245);
+  color: var(--main-bg-color);
 }
 
 nav > ul > li > a {
@@ -92,6 +107,17 @@ nav > ul > li > a {
   cursor: pointer;
 }
 
+.btn-login {
+  background-color: rgb(58, 62, 111);
+  border: none;
+  border-radius: 20px;
+  color:#fff;
+  height: 34px;
+  width: 120px;
+  font-family: var(--main-bg-color);
+  font-weight: 500;
+}
+
 .container-login {
   color: #fff;
   text-decoration: none;
@@ -102,4 +128,43 @@ nav > ul > li > a {
   padding: 0 50px;
   font-size: 14px;
   text-decoration: none;
+}
+
+nav ul li ul {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  position: absolute;
+  top: 50px;
+  left: 12px;
+  padding: 14px 0;
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+  z-index: 10;
+  border-radius: 5px;
+  transition: all 80ms ease;
+}
+nav ul li ul {
+  list-style: none;
+  font-family: var(--main-font-family);
+  font-weight: 700;
+  font-size: 16px;
+  color: rgb(48, 48, 48);
+}
+
+nav ul li:hover ul {
+  visibility: visible;
+  opacity: 1;
+  width: 300px;
+}
+
+nav ul li ul li {
+  padding: 16px 25px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(48, 48, 48);
 }
