@@ -168,3 +168,107 @@ a {
   text-decoration: none;
   color: rgb(48, 48, 48);
 }
+
+.container__flysearch {
+  max-width: 1350px;
+  height: 360px;
+  margin: 0 auto;
+}
+.container__flysearch-img {
+  background-image: url(../images/homepage/bg-girl.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  border-radius: 0 0 30px 30px;
+  height: 100%;
+  color: var(--main-bg-color);
+  font-family: var(--main-font-family);
+  font-size: 30px;
+}
+
+.container__flysearch-img  p {
+  padding: 50px 0px 20px 70px;
+}
+
+.container__flysearch-img  a {
+  padding: 0px 70px;
+  text-decoration: underline;
+  font-size: 16px;
+  color: var(--main-bg-color);
+}
+.container__flysearch-searcher {
+  max-width: 1220px;
+}
+
+.flysearch-nav {
+  width: 107px;
+  height: 44px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -50px 65px;
+  border-radius: 8px 8px 0 0;
+  border-bottom: 2px solid rgb(232, 17, 75);
+}
+
+.container-searcher {
+  background-color: #fff;
+  height: 135px;
+  width: 100%;
+  margin: 50px 65px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1);
+  border-radius: 0 8px 8px 8px;
+  padding: 0 10px;
+}
+
+.flysearch-second-nav {
+  padding: 0 10px;
+}
+
+.flysearch-second-nav ul {
+  display: flex;
+  padding: 30px 0 20px 25px;
+  list-style: none;
+}
+
+.flysearch-second-nav ul li {
+  padding: 5px 38px 0 38px;
+}
+.flysearch-second-nav ul li a {
+  color: var(--main-bg-color);
+}
+form {
+  margin: 0 auto;
+}
+
+.flysearch-form input {
+  width: 240px;
+  height: 50px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 0 18px;
+  margin: 0 8px;
+}
+
+#ida {
+  margin-right: 0;
+  border-radius: 8px 0px 0px 8px;
+}
+#vuelta {
+  margin-left: 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.flysearch-btn {
+  background-color: rgb(232, 17, 75);
+  color: #fff;
+  font-family: var(--main-font-family);
+  font-weight: bold;
+  height: 48px;
+  width: 160px;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+}

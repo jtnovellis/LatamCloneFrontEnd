@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/d2bf8cda31.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/index.css">
   <title>Vuelos Baratos con LATAM Airlines Colombia | Sitio Oficial</title>
@@ -40,12 +41,15 @@
       </div>
     </header>
     <section class="container__flysearch">
-      <div class="container__flysearch-img"></div>
+      <div class="container__flysearch-img">
+        <p>Vuela por Colombia y por el mundo con LATAM</p>
+        <a href="#">Ver destinos</a>
+      </div>
       <div class="container__flysearch-searcher">
         <div class="flysearch-nav">
-            <a href="#">Vuelos</a>
+            <a href="#"><i class="fa-solid fa-plane-departure"></i>Vuelos</a>
         </div>
-        <div>
+        <div class="container-searcher">
           <div class="flysearch-second-nav">
             <ul>
               <li><a href="#">Ida y vuelta</a></li>
@@ -59,7 +63,7 @@
               <input type="text" name="flysearh" id="destino" placeholder="Ingresa destino">
               <input type="date" name="flysearh" id="ida" placeholder="ida">
               <input type="date" name="flysearh" id="vuelta" placeholder="Vuelta">
-              <button type="submit">Buscar</button>
+              <button class="flysearch-btn" type="submit">Buscar</button>
             </form>
           </div>
         </div>
