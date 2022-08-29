@@ -129,7 +129,7 @@ max-width: calc(33.3333% - 0.66667rem);
     padding: 0px 2.4rem;
 }
 .title h1{
-    font-size: 24px;
+    font-size: 26px;
     margin: 30px 0px 16px;
     font-weight: 300;
     color: rgb(27, 0, 136);
@@ -144,26 +144,32 @@ max-width: calc(33.3333% - 0.66667rem);
 }
 .title-text p{
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.5;
     color: rgb(92, 92, 92);
-    margin-bottom: 0.4rem;
+    margin-bottom: 1rem;
 }
+
 
 .personal-data h3{
     font-size: 1.5rem;
     font-weight: 400;
     color: rgb(27, 0, 136);
     font-family: 'LATAM Sans Regular', 'Sans';
+    margin-bottom: 1.3rem;
 }
 .latam-form-p{
     margin-top: 1rem;
     font-family: 'LATAM Sans Regular', 'Sans';
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.5;
     color: rgb(92, 92, 92);
-    margin-bottom: 0.4rem;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+.latam-form-p strong{
+    font-family: 'LATAM Sans Bold', 'Sans';
+    font-weight: 800;
 }
 /*
 ->>> inputs styles
@@ -173,7 +179,7 @@ max-width: calc(33.3333% - 0.66667rem);
     display: flex;
     flex-direction: column;
     width: auto;
-    margin-top: 1.75rem;
+    margin-bottom: 2.2rem;
   }
   .input-field select:focus {
     border-style: inset;
@@ -192,8 +198,10 @@ max-width: calc(33.3333% - 0.66667rem);
 }
 .input-field select {
     font-family: 'LATAM Sans Light', 'Sans';
+    background-color: #FFF;
+    border: solid 1px grey;
     font-size: 16px;
-    height: 3.2rem;
+    height: 3.8rem;
     margin-top: -10px;
     padding: 10px 20px;
     border-radius: 10px; 
@@ -211,16 +219,25 @@ max-width: calc(33.3333% - 0.66667rem);
     font-family: 'LATAM Sans Light', 'Sans';
     color: #5C5C5C;
     font-size: 16px;
-    height: 1.75rem;    
+    height: 2.6rem;
     padding: 10px 20px;
     border: solid 1px grey;
     border-radius: 10px; 
+}
+.input-field input::placeholder {
+    font-family: 'LATAM Sans Regular ', 'Sans';
+    font-size: 1rem;
+    font-weight:lighter;
+    color:rgb(92, 92, 92);
+    opacity: 1; 
 }
 .input-field input:focus {
     border-style: inset;
     outline-color: rgb(27, 0, 136);
 }
 .input-field span{
+    font-family: 'LATAM sans Light', 'Sans';
+    font-weight: 800;
     font-size: 13px;
     margin: 4px 16px 0px;
 }
@@ -229,6 +246,133 @@ max-width: calc(33.3333% - 0.66667rem);
 }
 
 
+.gender{
+    padding-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgb(27, 0, 136);
+    font-family: 'LATAM Sans Regular', 'Sans';
+}
+.radio-select{
+    margin-bottom: 1.3rem;
+}
+.select{
+    display: flex;
+    font-family: 'LATAM Sans Regular', 'Sans';
+    color: rgb(92, 92, 92);
+    font-weight: 400;
+    margin: 0.5rem 0rem 1rem 0rem;
+
+}
+.select input[type=radio] {
+     border: 0px; width: 7%; height: 2em;   
+}
+
+.select span{
+    margin-left: 0.6rem;
+    font-style: normal;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.013rem;
+    font-weight: 400;
+    color: rgb(92, 92, 92);
+    }
+.number{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: rgb(27, 0, 136);
+    font-family: 'LATAM Sans Regular', 'Sans';
+}
+
+.select-number{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.3rem;
+}
+.country-select{
+    width: 45%;
+    height: 3.3rem;
+    background-color: #FFF;
+    border: solid 1px grey;
+    border-radius: 10px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c7/Antu-go-down-24.svg');
+    background-repeat: no-repeat, repeat; 
+    background-position: right .7em top 50%, 0 0;
+    background-size: 1.3em auto, 100%;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+}
+
+.number-select{
+    width: 45%;
+    height: 3rem;
+    border: solid 1px grey;
+    border-radius: 10px;
+}
+.login-data{
+    padding-top: 2rem;
+    padding-bottom: 0.2rem;
+    font-size: 1.55rem;
+    font-weight: 400;
+    color: rgb(27, 0, 136);
+    font-family: 'LATAM Sans Regular', 'Sans';
+}
+.input-data{
+    display: flex;
+    flex-direction: column;
+}
+.data{
+
+    color: #5C5C5C;
+    font-family: 'LATAM sans Light', 'Sans';
+    font-weight: 800;
+    font-size: 16px;
+    height: 2.3rem;    
+    padding: 10px 20px;
+    border: solid 1px grey;
+    border-radius: 10px; 
+    margin: 1rem 0rem 1rem 0rem;
+}
+.requeriments{
+    font-family: 'LATAM Sans Regular', 'Sans';
+    margin-top: 1rem;
+    padding-left: 0px;
+    margin-bottom: 3rem;
+}
+.requeriment{
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+    min-height: 1.5rem;
+    
+}
+.requeriment span {
+    margin-left: 0.5rem;
+}
+.requeriment svg path{
+    fill: rgb(133, 133, 133);
+}
+
+.term-def{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.term-check {
+    margin-right: 1rem;
+}
+.term-check input{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.term-text{
+    font-family: 'LATAM Sans Regular', 'Sans';
+    font-weight: 100;
+    font-size: 1.1rem;
+}
 /*
 <<<<<-- End of inputs styles
 */
@@ -276,7 +420,7 @@ max-width: calc(33.3333% - 0.66667rem);
         gap: 0px !important;
         grid-template-columns: repeat(12, 1fr);
         padding: 1rem;
-        max-width: calc(33.3333% - 0.66667rem);
+        max-width: calc(31.3333% - 0.66667rem);
     }
     .title h1{
         font-size: 32px;
@@ -286,4 +430,18 @@ max-width: calc(33.3333% - 0.66667rem);
         font-family: 'LATAM Sans Italic' , 'Sans';
     }
 
+    .country-select{
+        width: 30%;
+        height: 3rem;
+        background-color: #FFF;
+        border: solid 1px grey;
+        border-radius: 10px;
+    }
+    
+    .number-select{
+        width: 60%;
+        height: 2.7rem;
+        border: solid 1px grey;
+        border-radius: 10px;
+    }
  }

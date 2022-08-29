@@ -34,7 +34,7 @@
         <form action="latam-form">
           <div class="personal-data">
             <h3>
-                Datos Personales
+                Datos personales
             </h3>
           </div>
           <div class="latam-form-p"">
@@ -66,14 +66,14 @@
               <label for="name"><span class="label-style hidden">Número de cedula de ciudadania</span></label>
               <input type="number" placeholder="Número de cedula de ciudadania">
               <span>                
-                Tienes que ingresar un número de cédula de ciudadanía. Ejemplo: 1234567891
+                Ejemplo: 1234567891
               </span>
             </div>
             <div class="input-field">
               <label for="name"><span class="label-style hidden">Nombre(s)</span></label>
               <input type="text"  placeholder="Nombre(s)">
               <span>                
-                Tienes que ingresar el o los nombre tal como aparecen en tu cedula de ciudadania.
+                Tal como aparece(n) en tu cedula de ciudadania.
               </span>
             </div>
             <div class="input-field">
@@ -88,9 +88,73 @@
               <input placeholder="Ingresa tu fecha de nacimiento"  type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" />
             </div>
             <p class="gender">
-                
+                Género
             </p>
-           </div>
+            <div class="radio-select">
+              <div class="select">
+                <input type="radio" name="radio" id=""> 
+                <span>Masculino</span>
+              </div>
+              <div class="select">
+                <input type="radio" name="radio" id=""> 
+                <span>Femenino</span>
+              </div>
+              <div class="select">
+                <input type="radio" name="radio" id=""> 
+                <span>Prefiero no decirlo</span>
+              </div>
+            </div>
+            <p class="number">Numero de celular</p>
+            <div class="select-number">
+              <select class="country-select" name="" id="">
+                <option value="1">+57</option>
+              </select>
+              <input class="number-select" type="number">
+            </div>
+            <h3 class="login-data data-title"> Datos de ingreso a tu cuenta</h3>
+            <p class="latam-form-p"> <strong>Prefiere tu email personal </strong> para asegurar que recibas nuestra comunicación.</p>
+            <div class="input-data">
+              <input type="email" placeholder="Email" class="data">
+              <input type="password" placeholder="Constraseña" class="data">
+            </div>
+            <p class="latam-form-p" >Tu contraseña necesita tener mínimo:</p>
+              <ul class="requeriments">
+                <li class="requeriment">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 20 20" fill="none" focusable="false"><path fill="currentColor" d="M10 2a8 8 0 110 16 8 8 0 010-16zm2.121 4.464L10 8.586 7.879 6.464 6.464 7.88 8.586 10l-2.123 2.12 1.414 1.414L10 11.414l2.121 2.122 1.415-1.415L11.414 10l2.12-2.122-1.413-1.414z"></path></svg>
+                  <span>1 mayúscula</span>
+                </li>
+                <li class="requeriment">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 20 20" fill="none" focusable="false"><path fill="currentColor" d="M10 2a8 8 0 110 16 8 8 0 010-16zm2.121 4.464L10 8.586 7.879 6.464 6.464 7.88 8.586 10l-2.123 2.12 1.414 1.414L10 11.414l2.121 2.122 1.415-1.415L11.414 10l2.12-2.122-1.413-1.414z"></path></svg>
+                  <span>1 minúscula</span>
+                </li>
+                <li class="requeriment">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 20 20" fill="none" focusable="false"><path fill="currentColor" d="M10 2a8 8 0 110 16 8 8 0 010-16zm2.121 4.464L10 8.586 7.879 6.464 6.464 7.88 8.586 10l-2.123 2.12 1.414 1.414L10 11.414l2.121 2.122 1.415-1.415L11.414 10l2.12-2.122-1.413-1.414z"></path></svg>
+                  <span>1 número</span>
+                </li>
+                <li class="requeriment">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 20 20" fill="none" focusable="false"><path fill="currentColor" d="M10 2a8 8 0 110 16 8 8 0 010-16zm2.121 4.464L10 8.586 7.879 6.464 6.464 7.88 8.586 10l-2.123 2.12 1.414 1.414L10 11.414l2.121 2.122 1.415-1.415L11.414 10l2.12-2.122-1.413-1.414z"></path></svg>
+                  <span>8 caracteres</span>
+                </li>
+              </ul>
+              <div class="terms">
+                <div class="term-def">
+                  <div class="term-check">
+                    <input type="checkbox">
+                  </div>
+                  <div class="term-text">
+                    <p>Acepto los <a href="">Términos y condiciones del Programa LATAM Pass</a> y los <a href="">Términos y condiciones de la cuenta LATAM.</a> </p>
+                  </div>
+                </div>
+                <div class="term-def">
+                  <div class="term-check">
+                    <input type="checkbox">
+                  </div>
+                  <div class="term-text">
+                    <p>Autorizo que mis datos sean tratados de acuerdo a la Política de Privacidad</p>
+                  </div>
+                </div>
+              </div>
+          </div>
         </form>
       </div>
     </section>
