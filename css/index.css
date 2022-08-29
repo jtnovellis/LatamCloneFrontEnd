@@ -1,32 +1,32 @@
 @font-face {
   font-family: "LATAM Sans";
-  src: url(../fonts/latam_sans_bold-webfont.woff) formar('woff');
+  src: url(../fonts/latam_sans_bold-webfont.woff) format('woff');
   font-weight: bold;
 }
 @font-face {
   font-family: "LATAM Sans";
-  src: url(../fonts/latam_sans_light_italic-webfont.woff) formar('woff');
+  src: url(../fonts/latam_sans_light_italic-webfont.woff) format('woff');
   font-weight: light;
   font-style: italic;
 }
 @font-face {
   font-family: "LATAM Sans";
-  src: url(../fonts/latam_sans_light-webfont.woff) formar('woff');
+  src: url(../fonts/latam_sans_light-webfont.woff) format('woff');
   font-weight: light;
 }
 @font-face {
   font-family: "LATAM Sans";
-  src: url(../fonts/latam_sans_regular_italic-webfont.woff) formar('woff');
+  src: url(../fonts/latam_sans_regular_italic-webfont.woff) format('woff');
   font-style: italic;
 }
 @font-face {
   font-family: "LATAM Sans";
-  src: url(../fonts/latam_sans_regular-webfont.woff) formar('woff');
+  src: url(../fonts/latam_sans_regular-webfont.woff) format('woff');
 }
 
 :root {
   --main-bg-color:rgb(16, 0, 79);
-  --main-font-family: "LATAM Sans", "Trebuchet MS", sans-serif;
+  --main-font-family: "LATAM Sans", sans-serif;
 }
 
 * {
@@ -35,7 +35,8 @@
 }
 
 html, body {
-  font-family: "LATAM Sans", sans-serif;
+  font-family: var(--main-font-family);
+  line-height: 1.15;
 }
 
 header {
@@ -170,35 +171,50 @@ a {
 }
 
 .container__flysearch {
-  max-width: 1350px;
-  height: 360px;
+  width: 100%;
+  max-width: 85rem;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
 }
 .container__flysearch-img {
   background-image: url(../images/homepage/bg-girl.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 85rem;
+  margin: 0 auto;
   width: 100%;
   border-radius: 0 0 30px 30px;
   height: 100%;
   color: var(--main-bg-color);
-  font-family: var(--main-font-family);
-  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  max-height: 380px;
+  height: 360px;
 }
 
 .container__flysearch-img  p {
   padding: 50px 0px 20px 70px;
+  font-family: var(--main-font-family);
+  font-weight: light;
+  font-size: 1.75rem;
+  color: rgb(27, 0, 136);
 }
 
 .container__flysearch-img  a {
   padding: 0px 70px;
   text-decoration: underline;
   font-size: 16px;
-  color: var(--main-bg-color);
+  color: rgb(27, 0, 137);
+  
 }
 .container__flysearch-searcher {
   max-width: 1220px;
+  height: 40%;
 }
 
 .flysearch-nav {
@@ -215,12 +231,13 @@ a {
 
 .container-searcher {
   background-color: #fff;
-  height: 135px;
+  height: 100%;
   width: 100%;
   margin: 50px 65px;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1);
   border-radius: 0 8px 8px 8px;
   padding: 0 10px;
+  
 }
 
 .flysearch-second-nav {
@@ -243,6 +260,9 @@ form {
   margin: 0 auto;
 }
 
+.flysearch-form {
+  padding-bottom: 20px;
+}
 .flysearch-form input {
   width: 240px;
   height: 50px;
