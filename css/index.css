@@ -256,6 +256,12 @@ a {
 .flysearch-second-nav ul li a {
   color: var(--main-bg-color);
 }
+
+.flysearch-second-nav ul li a i {
+  padding-left: 1rem;
+  font-size: 18px;
+  color: rgb(232, 17, 75);
+}
 form {
   margin: 0 auto;
 }
@@ -385,7 +391,7 @@ form {
 
 .li-info-relaunchers{
   cursor: pointer;
-  padding: 0px 0px 1rem;
+  *padding: 0px 0px 1rem;
 }
 
 .a-info-relaunchers {
@@ -398,6 +404,11 @@ form {
   font-weight: bold;
 }
 
+.a-info-relaunchers > i {
+  color: rgb(232, 17, 75);
+  font-size: 20px;
+}
+
 .cambios-cancelaciones {
   margin: .6rem;
   display: flex;
@@ -407,8 +418,8 @@ form {
 .cambios-cancelaciones > i {
   color: rgb(27, 0, 136);
   background-color: rgb(214, 218, 245);
-  height: 3rem;
-  width: 3rem;
+  height: 2.6rem;
+  width: 2.6rem;
   border-radius: 1rem;
   display: flex;
   justify-content: center;
@@ -426,8 +437,8 @@ form {
 .requisitos-viajes > i {
   color: rgb(27, 0, 136);
   background-color: rgb(214, 218, 245);
-  height: 3rem;
-  width: 3rem;
+  height: 2.6rem;
+  width: 2.6rem;
   border-radius: 1rem;
   display: flex;
   justify-content: center;
