@@ -1,7 +1,5 @@
 /*
 To do: 
-- Add the animation to the inputs
-- Fix the color and weight of the input placeholders
 - Finish the rest of the page
 */
 *{
@@ -144,7 +142,7 @@ max-width: calc(33.3333% - 0.66667rem);
 }
 .title-text p{
     font-weight: 400;
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.5;
     color: rgb(92, 92, 92);
     margin-bottom: 1rem;
@@ -163,7 +161,7 @@ max-width: calc(33.3333% - 0.66667rem);
     font-family: 'LATAM Sans Regular', 'Sans';
     color: rgb(92, 92, 92);
     font-weight: 400;
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 1.5rem;
 }
@@ -225,7 +223,7 @@ max-width: calc(33.3333% - 0.66667rem);
     border-radius: 10px; 
 }
 .input-field input::placeholder {
-    font-family: 'LATAM Sans Regular ', 'Sans';
+    font-family: 'LATAM Sans Light', 'Sans';
     font-size: 1rem;
     font-weight:lighter;
     color:rgb(92, 92, 92);
@@ -237,8 +235,8 @@ max-width: calc(33.3333% - 0.66667rem);
 }
 .input-field span{
     font-family: 'LATAM sans Light', 'Sans';
-    font-weight: 800;
-    font-size: 13px;
+    font-weight: 200;
+    font-size: 12px;
     margin: 4px 16px 0px;
 }
 .hidden{
@@ -372,10 +370,74 @@ max-width: calc(33.3333% - 0.66667rem);
     font-family: 'LATAM Sans Regular', 'Sans';
     font-weight: 100;
     font-size: 1.1rem;
+    padding-bottom: 1rem;
 }
+.term-text a{
+   color:#4658DF;
+   font-weight: 600;
+}
+
+.dropdown-data-treatment{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    padding-bottom: 0.5rem;
+}
+.dropdown-title span{
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1B0088;
+    font-family: 'LATAM Sans Regular', 'Sans';
+}
+.dropdown-svg svg path{
+    fill: red; ;
+}
+.btn-create{
+    background: none rgb(232, 17, 75);
+    border-radius: 0.5rem;
+    font-family: "LATAM Sans", "Trebuchet MS", sans-serif;
+    font-weight: 600;
+    width: 100%;
+    border: 0.0625rem solid rgb(232, 17, 75);
+    color: rgb(255, 255, 255);
+    font-size: 1.125rem;
+    height: 3.5rem;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+}
+.captcha{
+    font-size: 0.9rem;
+}
+.captcha a{
+    color:#4658DF;
+    font-weight: 600;
+ }
+
 /*
 <<<<<-- End of inputs styles
 */
+
+/*
+->>>>>>>> Start of footer styles
+
+*/
+
+footer{
+    width: auto;
+    height:6rem;
+    background-color: #1B0088;
+
+}
+
+
+
+
+
+/*
+<<<<<<<<--- End of footer styles
+*/
+
+
 /*
 <<<<<<<<--- End of main styles
 */
