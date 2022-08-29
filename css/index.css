@@ -233,6 +233,10 @@ a {
   border-bottom: 2px solid rgb(232, 17, 75);
 }
 
+.flysearch-nav a i {
+  padding-right: .7rem;
+}
+
 .container-searcher {
   background-color: #fff;
   height: 100%;
