@@ -6,13 +6,13 @@
 @font-face {
   font-family: "LATAM Sans";
   src: url(../fonts/latam_sans_light_italic-webfont.woff) format('woff');
-  font-weight: light;
+  font-weight: 300;
   font-style: italic;
 }
 @font-face {
   font-family: "LATAM Sans";
   src: url(../fonts/latam_sans_light-webfont.woff) format('woff');
-  font-weight: light;
+  font-weight: 300;
 }
 @font-face {
   font-family: "LATAM Sans";
@@ -167,6 +167,7 @@ nav ul li ul li {
 
 a {
   text-decoration: none;
+  cursor: pointer;
   color: rgb(48, 48, 48);
 }
 
@@ -200,8 +201,8 @@ a {
 .container__flysearch-img  p {
   padding: 50px 0px 20px 70px;
   font-family: var(--main-font-family);
-  font-weight: light;
-  font-size: 1.75rem;
+  font-weight: 300;
+  font-size: 2.3rem;
   color: rgb(27, 0, 136);
 }
 
@@ -315,7 +316,7 @@ form {
 .section-main-container {
   display: flex;
   flex-direction: column;
-  
+  max-width: 90rem;
   position: relative;
 }
 
@@ -452,4 +453,1034 @@ form {
   justify-content: center;
   align-items: center;
   margin-right: 1.5rem;
+}
+
+
+
+.offers-container{
+  display: flex;
+  flex-direction: column;
+  padding: 0px 1rem;
+}
+
+.container-of-melnu-label{
+  display: block;
+  padding: 0.5rem;
+  text-align: left;
+  position: relative;
+}
+
+
+body {
+  overscroll-behavior: none;
+  font-family: "LATAM Sans", "Trebuchet MS", sans-serif;
+}
+
+
+
+html {
+  line-height: 1.15;
+  text-size-adjust: 100%;
+}
+
+html, body {
+  font-size: 16px;
+  color: rgb(48, 48, 48);
+}
+
+div {
+  display: block;
+}
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  margin-block: 0px;
+  margin-inline: 0px;
+  padding-block: 0px;
+  padding-inline: 0px;
+}
+
+.fly-offers-menu-container{
+  margin: 4rem 0px 0.75rem -0.5rem;
+}
+
+.menu-label-offers{
+  display: block;
+  -webkit-box-align: baseline;
+  align-items: baseline;
+  color: rgb(27, 0, 136);
+  font-size: 1.375rem;
+  line-height: 1.5rem;
+  font-family: "LATAM Sans", "Trebuchet MS", sans-serif;
+  font-weight: 300;
+  margin-right: 0.5rem;
+  
+}
+
+.cityselector-homebutton{
+  background: transparent;
+  border: 0px;
+  cursor: pointer;
+  padding: 0px;
+
+}
+
+button, select{
+  text-transform: none;
+}
+
+button, input{
+  overflow: visible;
+}
+
+button, input, optgroup, select, textarea{
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0px;
+}
+
+
+
+button, [type="button"], [type="reset"], [type="submit"] {
+  appearance: button;
+}
+
+button{
+  appearance: auto;
+  writing-mode: horizontal-tb !important;
+  font-style: normal;
+  font-variant-ligatures:normal ;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-weight: normal;
+  font-stretch: normal;
+
+  font-family: "LATAM Sans", "Trebuchet MS", sans-serif;
+  text-rendering: auto;
+  color: buttontext;
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+  cursor: default;
+  box-sizing: border-box;
+  background-color: buttonface;
+  margin: 0em;
+  padding: 1px 6px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: buttonborder;
+  border-image: initial;
+}
+
+.cityselected{
+  font-style: normal;
+  display: flex;
+  text-align: left;
+  max-width: 21.25rem;
+  color: rgb(27, 0, 136);
+  font-size: 1.375rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+h2{
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.375rem;
+  color: rgb(27, 0, 136);
+
+  /* display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold; */
+}
+
+
+.cityselectedname{
+  text-align: left;
+  max-width: 30rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: underline;
+  display: inline-block;
+  font-size: 1.375rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+
+.offers-imgs-container{
+  margin: 0px -0.25rem;
+}
+
+.list-offer-container{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+}
+
+.list-offer {
+  display: flex;
+ 
+  justify-content: center;
+ 
+  align-items: center;
+  height: auto;
+  min-height: 100%;
+}
+
+u l{
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+
+}
+
+li {
+  text-align: -webkit-match-parent;
+}
+
+
+
+.ContainerOfContainer-carousel {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+
+
+
+
+.container-carousel-element {
+  width: 100%;
+  list-style: none;
+  padding: 0px 0.25rem;
+  margin: 1rem 0px 1.5rem;
+}
+
+
+
+
+.doxKgH {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.cQREGG {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+}
+
+.list-item-promo {
+  width: 424px;
+  height: 100%;
+  transform: translateX(calc(-16px));
+  transition: transform 0.5s ease 0s;
+  display: flex;
+  -webkit-box-align: center;
+  place-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding: 0px 0px 0px 1rem;
+}
+
+
+.list-item-container {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+
+
+.LTohJ {
+  width: 100%;
+  list-style: none;
+  padding: 0px 0.25rem;
+  margin: 1rem 0px 1.5rem;
+}
+
+
+.dDjhBP {
+  list-style: none;
+}
+
+.offers-carousel {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  height: auto;
+  min-height: 100%;
+}
+
+.ListI-OfCarousel{
+  list-style: none;
+}
+
+.positions-in-carousel{
+  width: 424px;
+  height: 100%;
+  transform: translateX(calc(-16px));
+  transition: transform 0.5s ease 0s;
+  display: flex;
+  -webkit-box-align: center;
+  place-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding: 0px 0px 0px 1rem;
+}
+
+
+.carousel-item-redirect{
+  position: relative;
+    width: 100%;
+    background-color: rgb(225, 225, 225);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    overflow: visible;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    top: 0px;
+    transition: all 0.3s ease 0s;
+}
+
+ul li a {
+  color: rgb(48, 48, 48);
+}
+
+a {
+  background-color: transparent;
+}
+
+.img-divisor {
+  width: 100%;
+  height: 0px;
+  overflow: hidden;
+  padding: 56.25% 0px 0px;
+}
+
+.img-carousel {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+  position: absolute;
+  top: 0px;
+}
+
+img {
+  border-style: none;
+}
+
+.info-item-div {
+  width: 100%;
+  margin-top: -1.25rem;
+}
+
+.date-of-item{
+  display: flex;
+  transform: translate(0px);
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  
+}
+
+.position-date{
+  width: 100%;
+  display: flex;
+  min-height: 1.75rem;
+  background: rgb(223, 226, 246);
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  border-radius: 0.5rem 0.5rem 0px 0px;
+}
+
+.date-travel{
+  color: rgb(48, 48, 48);
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  background: rgb(223, 226, 246);
+  border-radius: 0.5rem 0.5rem 0px 0px;
+  padding: 0.25rem 1rem 0.225rem;
+}
+
+.when-is-the-travel{
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.dateDateOfTravel{
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.carousel-item-information {
+  z-index: 1;
+  border-radius: 0.5rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(16 0 79 / 12%) 0px 0.125rem 0.5rem;
+}
+
+.information-split{
+  
+  display: flex;
+  min-height: 8rem;
+  position: relative;
+  color: rgb(48, 48, 48);
+  border-radius: 0.5rem;
+  flex-direction: column;
+  padding: 1rem 1rem 0.5rem;
+  background-color: rgb(255, 255, 255);
+}
+
+.carousel-item-redirect:hover .information-split {
+  filter: drop-shadow(rgba(16, 0, 79, 0.16) 0px 0.5rem 0.5rem);
+  
+}
+
+.carousel-item-city{
+  margin-bottom: 0.5rem;
+}
+
+.city-information{
+  color: rgb(16, 0, 79);
+  font-size: 1.625rem;
+  font-weight: 400;
+  line-height: 2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top: -0.5rem;
+}
+
+h3 {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: rgb(27, 0, 136);
+}
+
+.carousel-item-flytype {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.trip-detail{
+  position: relative;
+  display: flex;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.one-way-or-round-trip{
+  background: rgba(45, 52, 206, 0.05);
+    border-radius: 0.75rem;
+    padding: 0px 0.75rem;
+    width: max-content;
+    color: rgb(45, 52, 206);
+    position: relative;
+    height: 1.5rem;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.type-of-fly{  
+  background: rgb(238, 237, 249);
+  border-radius: 0.75rem;
+  padding: 0px 0.75rem;
+  width: max-content;
+  color: inherit;
+  position: relative;
+  height: 1.5rem;
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.carousel-item-price{
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.price-description{
+  line-height: 1.25;
+  font-size: 0.875rem;
+}
+
+p{
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.price-offert{
+  color: rgb(16, 0, 79);
+  font-size: 1.375rem;
+  font-weight: 700;
+}
+
+.red-arrow-item{
+  display: inline-block;
+  height: fit-content;
+  position: relative;
+  width: auto;
+}
+
+.carousel-item-redirect:hover .red-round-arrow-button{
+  border-color: rgb(233, 88,120);
+  background-color: rgb(233, 88,120);
+
+
+}
+
+
+
+.red-round-arrow-button{
+  
+    background-color: rgb(232, 17, 75);
+    border-radius: 50%;   
+    box-sizing: border-box;
+    transition: none 0s ease 0s;
+    border: 0.0625rem solid rgb(232, 17, 75);
+    color: rgb(255, 255, 255);
+    position: relative;
+    align-items: center;
+    user-select: none;
+    display: inline-flex;
+    margin: 0;
+    height: 2.5rem;
+    width: 2.5rem;
+    text-align: center;
+    padding: 0;
+    align-content: center;
+    letter-spacing: 0.02857em;
+    max-width: 2.5rem;
+    min-width: auto;
+    box-shadow: none;
+    letter-spacing: 0.02857em;
+    max-height: 2.5rem;
+}
+
+.arrow-icon{
+  align-items: center;
+  display: flex;
+  width: fit-content;
+  -webkit-box-align: center;
+ margin: auto;
+  -webkit-box-pack: center;
+}
+
+
+
+.MuiButton-label{
+  width: 100%;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+}
+
+svg{
+  width: 20px;
+  height: 20px;
+  fill: none;
+}
+
+.arrow-icon svg path, .arrow-icon svg circle{
+  fill: currentColor;
+}
+
+
+.taxes-and-fly{
+  color: rgb(92, 92, 92);
+  font-size: 0.875rem;
+}
+
+.termsAndConditions{
+  cursor: pointer;
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.icon-redirect{
+  display: flex;
+  width: fit-content;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.t-and-c-label{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0px, 0px,0px, 0px);
+  border: 0px;
+}
+
+
+.termsAndConditions svg{
+  margin-left: 0.5rem;
+}
+
+.hmppgnd{
+  margin-top: 2rem;
+  padding: 0px 1rem;
+}
+
+.splt-ppgnd {
+  min-height: 14.5rem;
+  display: grid;
+  grid-auto-flow: row;
+  grid-auto-columns: minmax(0px 1fr);
+  gap: 1.5rem;
+}
+
+.ppgnd-prm{
+  text-decoration: none;
+}
+
+.termsAndConditions a:visited{
+  color: rgb(102, 23, 163);
+}
+
+.prm-container{
+  position: relative;
+  text-decoration: none;
+  color: initial;
+  text-align: initial;
+  padding: 0px;
+  background-color: transparent;
+  border: 9px;
+  border-radius: 8px;
+
+}
+
+
+.pcontainerpgnd-{
+  display: flex;
+  flex-flow: column nowrap;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  gap: 1rem;
+  top: 0px;
+  transition: all 0.3s ease 0s;
+}
+
+
+.imb-prm-ctnr{
+  height: 184px;
+  margin-bottom: -1rem;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.ppgnd-container div:first-child{
+  height: 8rem;
+  margin-bottom: -1.5rem;
+}
+
+.ppgnd-container img {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.imgn-prm-prpgnd{
+  object-fit: cover;
+  height: 8rem;
+  border-radius: 0.5rem;
+  background-color: rgb(255, 255, 255);
+  max-width: 100%;
+  width: 100%;
+  display: block;
+}
+
+.ppgnd-container div:last-child{
+  height: 6.5rem;
+}
+
+.info-prm-ctnr{
+  padding: 1rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  position: relative;
+  z-index: 3;
+  box-shadow: rgb(16 0 79 / 12%) 0px 2px;
+}
+
+.nf-prm-p{
+  color: rgb(92, 92, 92);
+}
+
+
+
+.vl-prpstn{
+  margin-top: 2.5rem;
+}
+
+.prpstn-container{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(16, 0, 79);
+  padding: 2.5rem 1rem 2rem;
+}
+.ppgnd-prm:hover .info-prm-ctnr {
+  filter: drop-shadow(rgba(16, 0, 79, 0.16) 0px 0.5rem 0.5rem);
+  
+}
+
+.prpstn-pnl-nf{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.rem;
+}
+
+.prpstn-nf-ttl{
+  font-style: normal;
+  color: rgb(255, 255, 255);
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.prpstn-nf-p{
+  color: rgb(255, 255, 255);
+  font-size: 1.125rem;
+}
+
+.prpstn-l-nf{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.prpstn-crsl-container{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.prpstn-crsl-ul-cntnr{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+}
+
+.prpstn-crsl-ul{
+  display: flex;
+  -webkit-box-pack:center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  height: auto;
+  min-height: 100%;
+}
+.prpstn-crsl-li{
+width: 252.667px;
+height: 100%;
+transform: translate(calc(-16px));
+transition: transform 0.5s ease 0s;
+display: flex;
+-webkit-box-align: center;
+place-items: center;
+-webkit-box-pack: center;
+justify-content: center;
+padding: 0px 0px 0px 1rem;
+}
+
+.prpstn-crsl-l-element{
+  width: inherit;
+  height: inherit;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.prp-crsl-elmnt-a{
+  height: calc(100% - 0.75rem);
+}
+
+.prp-c-e-imgdiv{
+width: 100%;
+min-height: 14.5rem;
+background-color: rgb(255, 255, 255);
+border-radius: 0.5rem 0.5rem 0px 0px;
+}
+
+.prpCE-img{
+  width: 100%;
+  opacity: 1;
+  height: 100%;
+  transition: all 0.5s ease 0s;
+  object-fit: cover;
+  min-width: 20.5rem;
+  border-radius: 0.5rem 0.5rem 0px 0px;
+}
+
+.prp-c-e-infodiv{
+  display: flex;
+  min-height: 10rem;
+  transition: all 0.5s ease 0s;
+  margin-bottom: 0px;
+  position: relative;
+  flex-direction: column;
+  top: -1.25rem;
+  padding: 1rem;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  background-color: rgb(255, 255, 255);
+}
+
+.prpCEinfo-title{
+  color: rgb(27, 0, 136);
+  font-size:1.125rem;
+  font-weight: 700;
+}
+
+.prpCEinfo-p{
+  transition: all 0.5s ease 0s;
+  color: rgb(92, 92, 92);
+  margin-bottom: 1rem;
+}
+
+.prpCEI-link{
+  color: rgb(232, 17, 75);
+  font-weight: 700;
+}
+
+.prp-crsl-E-more{
+      width: 100%;
+    height: calc(100% - 1.25rem);
+    overflow: hidden;
+    max-width: 33.75rem;
+}
+
+.prpCrslE-more-infodiv{  
+  height: 100%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  text-decoration: none;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding: 0px 1rem;
+  border-radius: 0.5rem;
+  background-color: rgb(255, 255, 255);
+}
+
+.prpCEMI-container{
+  display: inline-block;
+  height: fit-content;
+  position: relative;
+  width: auto;
+}
+
+.prpCEMI-title {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: rgb(16, 0, 79);
+  font-size: 1.125rem;
+}
+
+@media (min-width: 37.5rem){
+  
+  .menu-label-offers{
+      -webkit-box-align: inherit;
+      align-items: inherit;
+      font-size: 1.75rem;
+      line-height: 2rem;
+      font-weight: 300;
+      color: rgb(27, 0, 136);
+  }
+
+  .cityselectedname{
+    font-size: 1.75rem;
+    line-height: 2rem;
+}
+
+.dropdown-arrow-menu{
+  color: rgb(232, 17, 75);
+}
+
+  
+.cityselected {
+    max-width: inherit;
+}
+
+  .offers-imgs-container{
+    margin: 0px -0.75rem;
+}
+
+.list-item-promo {
+  padding: 0px 0px 0px 1rem;
+}
+
+.LTohJ {
+  padding: 0px 0.75rem;
+}
+
+.positions-in-carousel{
+  padding: 0px 0px 0px 1rem;
+}
+
+.container-carousel-element{
+  padding: 0px 0.75rem;
+}
+
+.info-item-div {
+  margin-top: -2rem;
+}
+
+.hmppgnd{
+  margin-top: 4rem;
+}
+
+.splt-ppgnd {
+  grid-auto-flow: column;
+  
+}
+
+.prpstn-crsl-li{
+  padding: 0px 0px 0px 1rem;
+}
+
+}
+
+
+@media (min-width: 64rem){
+
+  .main-container{
+    margin: 4rem auto 0px;
+  }
+
+  .container-of-melnu-label {
+      display: flex;
+      -webkit-box-align: baseline;
+      align-items: baseline;
+  }
+
+  .GGFlL {
+    margin: 4rem auto 0px;
+}
+
+  h2 {
+    font-size: 1.75rem;
+}
+
+.container-carousel-element:nth-child(n+1) {
+  display: unset;
+}
+
+.info-item-div {
+  margin-top: -2.25rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.splt-ppgnd {
+  min-height: 6rem;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0px 50%);
+  
+}
+
+.imb-prm-ctnr{
+  height: 245px;
+  margin-bottom: -2.9375rem;
+}
+
+.ppgnd-container div:last-child{
+  height: 5rem;
+}
+
+
+.vl-prpstn{
+  margin-top: 3.75rem;
+  padding: 0px 1rem;
+}
+
+.prpstn-container {
+  display: flex;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  padding: 4rem 4rem 0.25rem;
+}
+
+.prpstn-pnl-nf{
+  margin-bottom: 64rem;
+}
+
+.prp-c-e-imgdiv{
+ min-height: 9.25rem; 
+}
+
+.prpCE-img{
+  min-width: 0px;
+}
+
 }
