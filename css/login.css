@@ -165,8 +165,14 @@ a:hover {
 
 .data:focus {
     border: 3px solid rgb(17, 0, 112);
+    outline-color: rgb(27, 0, 136);
 }
 
 .data:checked {
     border: 3px solid rgb(17, 0, 112);
+}
+
+.login:hover {
+    background-color: rgb(221, 30, 87);
+    ;
 }
