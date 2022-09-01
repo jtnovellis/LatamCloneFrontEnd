@@ -1,0 +1,718 @@
+/*
+To do: 
+- Finish the rest of the page
+*/
+*{
+    margin: 0;
+    
+}
+@font-face {
+    font-family: "LATAM Sans Bold";
+    src: url(../fonts/latam_sans_bold-webfont.woff) format('woff');
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: "LATAM Sans Italic";
+    src: url(../fonts/latam_sans_light_italic-webfont.woff) format('woff');
+    font-weight: light;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "LATAM Sans Light";
+    src: url(../fonts/latam_sans_light-webfont.woff) format('woff');
+    font-weight: light;
+  }
+  @font-face {
+    font-family: "LATAM Sans Regular Italic";
+    src: url(../fonts/latam_sans_regular_italic-webfont.woff) format('woff');
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "LATAM Sans Regular";
+    src: url(../fonts/latam_sans_regular-webfont.woff) format('woff');
+  }
+/*
+->>>>> Start of Header styles
+    Problems -> Header seems a little different from the original latam header, trying to fix it.
+*/
+.header{   /*Principal div*/
+    display: flex;
+    min-height: 3rem;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    background: rgb(16, 0, 79);
+    width: 100% !important;
+    min-height: 4rem;
+}
+.header-div{    /*Div where the items(icon and button) are placed*/
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 0px 1rem;
+    color: rgb(255, 255, 255);
+
+}
+.latam-a{               /*Container of the icon*/
+    margin:0; 
+    min-height: 0.75rem;  
+
+}
+.latam-icon{            /*Icon itself*/
+    width: 100px;
+    margin-left: 0px;
+}
+.latam-btn-div{         /*Button container*/
+    display: flex;
+    flex-direction: row;
+
+}
+.latam-login-btn{       /*Button itself*/
+    outline: none;
+    display: flex;
+    cursor: pointer;
+    text-align: left;
+    position: relative;
+    white-space: nowrap;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    border-radius: 3.125rem;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0px 0.8rem;
+    min-height: 2rem;
+    margin-left: 0px 0px 0px 1rem;
+    border: 0.0625rem solid transparent;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+/*
+->>>>> Start of main styles
+    Problems -> 
+*/
+.main{
+    width: 100%;
+    margin: 0px auto;
+}
+.section{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+/*
+display: flex;
+flex-direction: column;
+-webkit-box-align: stretch;
+align-items: stretch;
+gap: 0px !important;
+grid-template-columns: repeat(12, 1fr);
+padding: 1rem;
+max-width: calc(33.3333% - 0.66667rem);
+*/
+
+
+.section-div{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0px 2.4rem;
+}
+.title h1{
+    font-size: 26px;
+    margin: 30px 0px 16px;
+    font-weight: 300;
+    color: rgb(27, 0, 136);
+    font-family: 'LATAM Sans Italic' , 'Sans';
+}
+
+.title-text{
+    font-family: 'LATAM Sans Regular', 'Sans';
+    font-size: 16px;
+    text-align:left;
+    display: block;
+}
+.title-text p{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: rgb(92, 92, 92);
+    margin-bottom: 1rem;
+}
+
+
+.personal-data h3{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgb(27, 0, 136);
+    font-family: 'LATAM Sans Regular', 'Sans';
+    margin-bottom: 1.3rem;
+}
+.latam-form-p{
+    margin-top: 1rem;
+    font-family: 'LATAM Sans Regular', 'Sans';
+    color: rgb(92, 92, 92);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+.latam-form-p strong{
+    font-family: 'LATAM Sans Bold', 'Sans';
+    font-weight: 800;
+}
+/*
+->>> inputs styles
+*/
+.input-field {
+    font-family: 'LATAM Sans Light', 'Sans';
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin-bottom: 2.2rem;
+  }
+  .input-field select:focus {
+    border-style: inset;
+    outline-color: rgb(27, 0, 136);
+}
+.input-field label {
+    font-size: 12px;
+    color: #5C5C5C;
+    margin-left: -10px;
+    z-index:2
+}
+.input-field label .label-style {
+    background: #FFF;
+    font-weight: bold;
+    padding: 0px 7px;
+}
+.input-field select {
+    font-family: 'LATAM Sans Light', 'Sans';
+    background-color: #FFF;
+    border: solid 1px grey;
+    font-size: 16px;
+    height: 3.8rem;
+    margin-top: -10px;
+    padding: 10px 20px;
+    border-radius: 10px; 
+    /* Added the dropdown svg*/
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c7/Antu-go-down-24.svg');
+    background-repeat: no-repeat, repeat; 
+    background-position: right .7em top 50%, 0 0;
+    background-size: 1.3em auto, 100%;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+}
+
+.input-field input {
+    font-family: 'LATAM Sans Light', 'Sans';
+    color: #5C5C5C;
+    font-size: 16px;
+    height: 2.6rem;
+    padding: 10px 20px;
+    border: solid 1px grey;
+    border-radius: 10px; 
+}
+.input-field input::placeholder {
+    font-family: 'LATAM Sans Light', 'Sans';
+    font-size: 1rem;
+    font-weight:lighter;
+    color:rgb(92, 92, 92);
+    opacity: 1; 
+}
+.input-field input:focus {
+    border-style: inset;
+    outline-color: rgb(27, 0, 136);
+}
+.input-field span{
+    font-family: 'LATAM sans Light', 'Sans';
+    font-weight: 200;
+    font-size: 12px;
+    margin: 4px 16px 0px;
+}
+.hidden{
+    display:none;
+}
+
+
+.gender{
+    padding-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgb(27, 0, 136);
+    font-family: 'LATAM Sans Regular', 'Sans';
+}
+.radio-select{
+    margin-bottom: 1.3rem;
+}
+.select{
+    display: flex;
+    font-family: 'LATAM Sans Regular', 'Sans';
+    color: rgb(92, 92, 92);
+    font-weight: 400;
+    margin: 0.5rem 0rem 1rem 0rem;
+
+}
+/**
+Mala practica pero funcional
+**/
+.select input[type=radio] {
+    appearance: none;
+    border-radius: 50%;
+    border: 2px solid #33f;
+    width: 20px;
+    height: 20px;
+}
+ 
+ .select input[type="radio"]:checked::after{
+     display: inline-block;
+     content: "";
+     position: relative;
+     height: 8px;
+     width: 8px;
+     background: blue;
+     border:2px solid blue;
+     border-radius: 50%;
+     top: 2px;
+     left: 2px;
+ }
+/**
+Mala practica pero funcional
+**/
+.select span{
+    margin-left: 0.6rem;
+    font-style: normal;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.013rem;
+    font-weight: 400;
+    color: rgb(92, 92, 92);
+    }
+.number{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: rgb(27, 0, 136);
+    font-family: 'LATAM Sans Regular', 'Sans';
+}
+
+.select-number{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.3rem;
+}
+.country-select{
+    width: 45%;
+    height: 3.3rem;
+    background-color: #FFF;
+    border: solid 1px grey;
+    border-radius: 10px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c7/Antu-go-down-24.svg');
+    background-repeat: no-repeat, repeat; 
+    background-position: right .7em top 50%, 0 0;
+    background-size: 1.5em auto, 100%;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+    text-align: center;
+}
+
+.number-select{
+    width: 45%;
+    height: 3rem;
+    border: solid 1px grey;
+    border-radius: 10px;
+    padding-left: 1rem;
+    font-size: 1rem;
+}
+
+.login-data{
+    padding-top: 2rem;
+    padding-bottom: 0.2rem;
+    font-size: 1.55rem;
+    font-weight: 400;
+    color: rgb(27, 0, 136);
+    font-family: 'LATAM Sans Regular', 'Sans';
+}
+.input-data{
+    display: flex;
+    flex-direction: column;
+}
+.data{
+
+    color: #5C5C5C;
+    font-family: 'LATAM sans Light', 'Sans';
+    font-weight: 800;
+    font-size: 16px;
+    height: 2.3rem;    
+    padding: 10px 20px;
+    border: solid 1px grey;
+    border-radius: 10px; 
+    margin: 1rem 0rem 1rem 0rem;
+}
+.requeriments{
+    font-family: 'LATAM Sans Regular', 'Sans';
+    margin-top: 1rem;
+    padding-left: 0px;
+    margin-bottom: 3rem;
+}
+.requeriment{
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+    min-height: 1.5rem;
+    
+}
+.requeriment span {
+    margin-left: 0.5rem;
+}
+.requeriment svg path{
+    fill: rgb(133, 133, 133);
+}
+
+.term-def{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.term-check {
+    margin-right: 1rem;
+}
+.term-check input{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.term-text{
+    font-family: 'LATAM Sans Regular', 'Sans';
+    font-weight: 100;
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+}
+.term-text a{
+   color:#4658DF;
+   font-weight: 600;
+}
+
+.dropdown-data-treatment{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    padding-bottom: 0.5rem;
+}
+.dropdown-title span{
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1B0088;
+    font-family: 'LATAM Sans Regular', 'Sans';
+}
+.dropdown-svg svg path{
+    fill: red; ;
+}
+.btn-create{
+    background: none rgb(232, 17, 75);
+    border-radius: 0.5rem;
+    font-family: "LATAM Sans", "Trebuchet MS", sans-serif;
+    font-weight: 600;
+    width: 100%;
+    border: 0.0625rem solid rgb(232, 17, 75);
+    color: rgb(255, 255, 255);
+    font-size: 1.125rem;
+    height: 3.5rem;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+}
+.captcha{
+    font-size: 0.9rem;
+}
+.captcha a{
+    color:#4658DF;
+    font-weight: 600;
+ }
+
+/*
+<<<<<-- End of inputs styles
+*/
+
+/*
+->>>>>>>> Start of footer styles
+
+*/
+
+footer{
+    width: auto;
+    height:21rem;
+    background-color: #ECECEE;
+    margin-top: 5rem;
+    border-top: solid 1px #919191;
+    
+}
+.footer-components{
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    margin: 2rem 0px 1.75rem;
+    max-width: 89.75rem;
+    padding: 0px 1rem;
+    text-align: center;
+
+
+}
+.f-logo svg{
+    margin-top: 0.75rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+.f-terms{
+    -webkit-box-flex: 2;
+    flex-grow: 2;
+    margin-right: 1rem;
+}
+.f-terms span {
+    font-family: 'LATAM Sans Light', 'Sans';
+    color: #5C5C5C;
+    font-weight: 600;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    padding: 0px 0.5rem 0.25rem 0px;
+}
+
+.f-cert{
+display: flex;
+flex-direction: column;
+padding-bottom: 1rem;
+}
+.f-cert span{
+    font-family: 'LATAM Sans Light', 'Sans';
+    font-size: 12px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.f-cert img{
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    margin: auto;
+}
+.f-cert2 img{
+    width: 133px;
+    height: 50px;
+    justify-content: center;
+    margin: auto;
+}
+
+
+
+/*
+<<<<<<<<--- End of footer styles
+*/
+
+
+/*
+<<<<<<<<--- End of main styles
+*/
+
+
+@media (min-width: 920px) { 
+    .header-div{
+        display: flex;
+        justify-content: space-between;
+    }
+    .latam-a{               /*Container of the icon*/
+        margin:0; 
+        min-height: 0.75rem;  
+        margin-left: 2rem;
+    }
+    .latam-icon{            /*Icon itself*/
+        width: 100px;
+        margin-left: 0px;
+    }
+    .latam-btn-div{         /*Button container*/
+        display: flex;
+        flex-direction: row;
+        margin-right: 2rem;
+    }
+    .latam-login-btn{       /*Button itself*/
+        outline: none;
+        display: flex;
+        cursor: pointer;
+        text-align: left;
+        position: relative;
+        white-space: nowrap;
+        align-items: center;
+        color: rgb(255, 255, 255);
+        border-radius: 3.125rem;
+        font-size: 1rem;
+        font-weight: 700;
+        padding: 0px 0.8rem;
+        min-height: 2rem;
+        margin-left: 0px 0px 0px 1rem;
+        border: 0.0625rem solid transparent;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    .section-div{
+        display: flex;
+        flex-direction: column;
+        -webkit-box-align: stretch;
+        align-items: stretch;
+        gap: 0px !important;
+        grid-template-columns: repeat(12, 1fr);
+        padding: 1rem;
+        max-width: calc(31.3333% - 0.66667rem);
+    }
+    .title h1{
+        font-size: 32px;
+        margin: 30px 0px 16px;
+        font-weight: 300;
+        color: rgb(27, 0, 136);
+        font-family: 'LATAM Sans Italic' , 'Sans';
+    }
+
+    .country-select{
+        width: 30%;
+        height: 3rem;
+        background-color: #FFF;
+        border: solid 1px grey;
+        border-radius: 10px;
+    }
+    
+    .number-select{
+        width: 60%;
+        height: 2.7rem;
+        border: solid 1px grey;
+        border-radius: 10px;
+    }
+    footer{
+        height:8rem;
+        background-color: #ECECEE;
+        margin-top: 5rem;
+        border-top: solid 1px #919191;
+        
+    }
+    .footer-components{
+        -webkit-box-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        -webkit-box-pack: start;
+
+
+        text-align: center;
+    
+    
+    }
+    .f-logo svg{
+        margin-top: 0.75rem;
+        height: 2rem;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+        margin-left: 2rem;
+    }
+    .f-terms{
+        -webkit-box-flex: 2;
+        flex-grow: 2;
+        margin-right: 1rem;
+    }
+    .f-terms span {
+        text-align: justify;
+    }
+    
+    .f-cert{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 4rem;
+    }
+    .f-cert span{
+        width: 100%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: pre;
+        margin-top: 0.5rem;
+        margin-right:1rem;
+    }
+    .f-cert img{
+        width: 40px;
+        height: 40px;
+        justify-content: center;
+        margin: auto;
+    }
+    .f-cert2{
+        margin-right: 2rem;
+    }
+    .f-cert2 img{
+        width: 133px;
+        height: 50px;
+        justify-content: center;
+        margin: auto;
+    }
+}
+
+
+
+@media (min-width: 1600px) { 
+    .header-div{
+        display: flex;
+        justify-content: space-between;
+    }
+    .latam-a{               /*Container of the icon*/
+        margin:0; 
+        min-height: 0.75rem; 
+        margin-left: 12rem; 
+    }
+    .latam-btn-div{         /*Button container*/
+        display: flex;
+        flex-direction: row;
+        margin-right: 12rem;
+    }
+
+
+
+
+
+    footer{
+        width: auto;
+        margin:0px;
+        background-color: #ECECEE;
+        margin-top: 5rem;
+        border-top: solid 1px #919191;
+
+
+    }
+    .footer-components{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+       
+    }
+    .f-logo{
+        margin-left: 12rem;
+    }
+    .f-cert{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 1rem;
+    }
+    .f-cert2{
+        margin-right: 12rem;
+    }
+}
