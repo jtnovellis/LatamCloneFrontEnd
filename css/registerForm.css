@@ -264,10 +264,32 @@ max-width: calc(33.3333% - 0.66667rem);
     margin: 0.5rem 0rem 1rem 0rem;
 
 }
+/**
+Mala practica pero funcional
+**/
 .select input[type=radio] {
-     border: 0px; width: 7%; height: 2em;   
+    appearance: none;
+    border-radius: 50%;
+    border: 2px solid #33f;
+    width: 20px;
+    height: 20px;
 }
-
+ 
+ .select input[type="radio"]:checked::after{
+     display: inline-block;
+     content: "";
+     position: relative;
+     height: 8px;
+     width: 8px;
+     background: blue;
+     border:2px solid blue;
+     border-radius: 50%;
+     top: 2px;
+     left: 2px;
+ }
+/**
+Mala practica pero funcional
+**/
 .select span{
     margin-left: 0.6rem;
     font-style: normal;
@@ -300,10 +322,11 @@ max-width: calc(33.3333% - 0.66667rem);
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c7/Antu-go-down-24.svg');
     background-repeat: no-repeat, repeat; 
     background-position: right .7em top 50%, 0 0;
-    background-size: 1.3em auto, 100%;
+    background-size: 1.5em auto, 100%;
     -moz-appearance:none; /* Firefox */
     -webkit-appearance:none; /* Safari and Chrome */
     appearance:none;
+    text-align: center;
 }
 
 .number-select{
@@ -311,7 +334,10 @@ max-width: calc(33.3333% - 0.66667rem);
     height: 3rem;
     border: solid 1px grey;
     border-radius: 10px;
+    padding-left: 1rem;
+    font-size: 1rem;
 }
+
 .login-data{
     padding-top: 2rem;
     padding-bottom: 0.2rem;
@@ -490,6 +516,7 @@ padding-bottom: 1rem;
     justify-content: center;
     margin: auto;
 }
+
 
 
 /*
