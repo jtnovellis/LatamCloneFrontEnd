@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Ingresa a tu cuenta | LATAM airlines</title>
+    <link rel="shortcut icon" href="../images-login/latam.ico">
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="https://kit.fontawesome.com/4496210484.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-  
+
+    <section class="form_register">
+        <a href="../index.html"> <img src="../images-login/logo_latam.png" alt="logo pagina inicio"></a>
+        <form action="" method="post">
+            <legend class="legend">
+                <h1>Inicia sesión</h1>
+                <p class="socio"> Si ya eres socio LATAM Pass ingresa con tus datos de siempre. </p>
+            </legend>
+
+            <div class="input_group">
+                <input type="email" class="data" name="email" id="email" placeholder="Email o número de socio">
+            </div>
+            <div class="input_group">
+                <i class="fa-solid fa-eye"></i>
+                <input type="password" class="data" name="password" id="password" placeholder="Contraseña">
+            </div>
+            <div>
+                <p class="recuperar"><a href=""><strong>recupera el acceso a tu cuenta </strong> </a></p>
+            </div>
+            <div class="fieldset">
+                <fieldset class="captcha">
+                    <!--<input type="checkbox" class="captcha1" name="captcha1" id="captcha1">-->
+                </fieldset>
+            </div>
+            <div class="input_group">
+                <button class="login"><strong>Iniciar sesión </strong> </button>
+            </div>
+
+
+        </form>
+    </section>
+    <p class="registrar">¿No estás registrado? <a href="./registerForm.html">Crea una cuenta </a></p>
 </body>
+
 </html>
