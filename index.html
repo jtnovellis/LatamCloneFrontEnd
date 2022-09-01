@@ -11,95 +11,201 @@
 </head>
 <body>
   <div class="root">
-    <header>
-      <div class="container__header">
-        <div class="container__nav">
-          <nav>
-            <ul>
-              <a href="#">
-                <img class="image-logo" src="./images/homepage/latam-airlines-logo.png" alt="LATAM Airlines logo">
-              </a> 
-              <li><a href="#">Ofertas y destinos</a>
-                <ul>
-                  <li><a href="#">Ofertas de vuelos</a></li>
-                  <li><a href="#">Destinos</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Mis viajes</a>
-                <ul>
-                  <li><a href="#">Administrar tus viajes</a></li>
-                  <li><a href="#">Check-in</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Centro de ayuda</a></li>
-            </ul>
-            <div class="container-login">
-              <a href="#">Estado de vuelos</a>
-              <a href="#">🇨🇴 COP • $</a>
-              <button class="btn-login" type="submit">Iniciar Sesión</button>
-            </div>
-          </nav>
-        </div>
-      </div>
-    </header>
-    <section class="container__flysearch">
-      <div class="container__flysearch-img">
-        <p>Vuela por Colombia y por el mundo con LATAM</p>
-        <a href="#">Ver destinos <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-      </div>
-      <div class="container__flysearch-searcher">
-        <div class="flysearch-nav">
-            <a href="#"><i class="fa-solid fa-plane-departure"></i>Vuelos</a>
-        </div>
-        <div class="container-searcher">
-          <div class="flysearch-second-nav">
-            <ul>
-              <li><a href="#">Ida y vuelta<i class="fa-solid fa-angle-down"></i></a></li>
-              <li><a href="#">Economy<i class="fa-solid fa-angle-down"></i></a></li>
-              <li><a href="#">1 Pasajero<i class="fa-solid fa-angle-down"></i></a></li>
-            </ul>
-          </div>
-          <div class="flysearch-form">
-            <form action="#">
-              <input type="text" name="flysearh" id="origen" placeholder="Ingresa origen">
-              <input type="text" name="flysearh" id="destino" placeholder="Ingresa destino">
-              <input type="date" name="flysearh" id="ida" placeholder="ida">
-              <input type="date" name="flysearh" id="vuelta" placeholder="Vuelta">
-              <button class="flysearch-btn" type="submit">Buscar</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-    <main class="main-container">
-      <section class="section-main-container">
-        <div class="covid-info">
-          <div class="info">
-            <div class="info-content">
-              <div class="info-header">
-                <i class="fa-solid fa-hand-holding-medical"></i>
-                <h1><span>Información para COVID-19</span></h1>
+    <div class="container">
+      <header class="container__header-homepage">
+        <div class="container__header">
+          <a href="./index.html"><img src="./images/homepage/latam-airlines-logo.png" alt="Logo-LATAM" class="img-logo"></a>
+          <div class="container-nav">
+            <nav>
+              <div class="ofertas-destino">
+                <button type="button" name="ofertas-destinos">
+                  <span>Ofertas y destinos</span>
+                  <i class="fa-solid fa-angle-down"></i></a></li>
+                </button>
+                <div class="ofertas-destino-submenu">
+                  <div class="menu-ofertas-wrapper"></div>
+                </div>
               </div>
-              <p>
-                <span>En nuestro <a href="#" class="a-covid">Centro de información COVID-19</a> encontrarás todo lo necesario para viajar, cambiar tu vuelo, documentación y más.</span>
-              </p>
+              <div class="mis-viajes">
+                <button type="button" name="viajes">
+                  <span>Mis viajes</span>
+                  <i class="fa-solid fa-angle-down"></i></a></li>
+                </button>
+                <div class="viajes-submenu">
+                  <div class="menu-viajes-wrapper"></div>
+                </div>
+              </div>
+              <div class="centro-ayuda">
+                <a href="#">Centro de ayuda</a>
+              </div>
+            </nav>
+            <div class="e-vuelo-container">
+              <a href="#">Estado de vuelo</a>
             </div>
-            <div class="info-relaunchers-container">
-              <div class="info-relaunchers">
-                <ul class="ul-info-relaunchers">
-                  <li class="li-info-relaunchers">
-                    <a href="#" class="a-info-relaunchers">
-                      <div class="cambios-cancelaciones">
-                        <i class="fa-solid fa-plane-slash"></i>
+          </div>
+          <div class="login-container">
+            <button type="button" name="divisa" class="btn-divisa">
+              <span>🇨🇴</span>
+              <span>COP · $</span>
+            </button>
+            <button type="button" name="login" class="btn-login">Iniciar sesión</button>
+          </div>
+          <div class="menu-responsive">
+            <button type="button" name="button" class="btn-menu-responsive">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </header>
+      <div class="hero-container">
+        <div class="hero">
+          <div class="hero-img">
+            <div class="main-img">
+              <img src="./images/homepage/default_hero.jpeg" alt="Imagen Principal">
+            </div>
+            <div class="info-hero">
+              <h1>Vuela por Colombia y por el mundo con LATAM</h1>
+              <a href="#"><span>Ver destinos</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="booking-box">
+          <div class="products-wrapper">
+            <div class="products">
+              <div class="products-option">
+                <div class="btn-vuelos-container">
+                  <button type="button" name="vuelos" class="vuelos"><i class="fa-solid fa-plane-departure"></i>Vuelos</button>
+                </div>
+              </div>
+            </div>
+            <div class="panel-flight">
+              <div class="panel-flight-container">
+                <div class="wrapper-flight">
+                  <div class="box-search">
+                    <div class="title">
+                      <h2 class="title-item">¿A dónde quieres ir?</h2>
+                    </div>
+                    <div class="search-flight-options">
+                      <div class="ida-vuelta-container">
+                        <div class="ida-vuelta">
+                          <span>Ida y Vuelta</span>
+                          <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="economy-container">
+                          <div class="economy">
+                            <span>Economy</span>
+                            <i class="fa-solid fa-angle-down"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="pasajero-container">
+                          <div class="pasajero">
+                            <span>1 Pasajero</span>
+                            <i class="fa-solid fa-angle-down"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input-desktop-container">
+                    <div class="form-container">
+                      <form action="#">
+                        <div class="inputs">
+                          <div class="inputs-text-container">
+                            <div class="input-origen">
+                              <input type="text" name="origen" id="ida" placeholder="Ingresa origen">
+                            </div>
+                          </div>
+                          <div class="inputs-text-container-two">
+                            <div class="input-destino">
+                              <input type="text" name="destino" id="regreso" placeholder="Ingresa destino">
+                            </div>
+                          </div>
+                          <div class="input-date-container">
+                            <div class="dates">
+                              <div class="input-ida">
+                                <input type="date" name="ida" id="fecha-ida">
+                              </div>
+                              <div class="input-vuelta">
+                                <input type="date" name="vuelta" id="fecha-regreso">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="btn-submit-search">
+                            <button type="submit" class="btn-buscar">Buscar</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                    <ul class="input-container">
+                      <li>
+                        <div class="origen-container">
+                          <div class="svg-origen">
+                            <i class="fa-solid fa-plane-departure"></i>
+                          </div>
+                          <div class="origen">
+                            <input type="text" name="destino" placeholder="Origen">
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="destino-container">
+                          <div class="svg-destino">
+                            <i class="fa-solid fa-map-pin"></i>
+                          </div>
+                          <div class="destino">
+                            <input type="text" name="destino" placeholder="Destino">
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <main class="main-content">
+        <section class="section-main-content">
+          <div class="covid-communications__container">
+            <div class="covid-comunications__subcontainer">
+              <div class="covid-comunications-info">
+                <div class="covid-comunications-info-header">
+                  <i class="fa-solid fa-hand-holding-medical"></i>
+                  <h2><span>Información para COVID-19</span></h2>
+                </div>
+                <p>
+                  <span>En nuestro <a href="#">Centro de información COVID-19</a> encontrarás todo lo necesario para viajar, cambiar tu vuelo, documentación y más.</span>
+                </p>
+              </div>
+            </div>
+            <hr class="hrs">
+            <div class="main-options-container">
+              <div class="option-container">
+                <ul class="option-ul">
+                  <li class="option-ul-li">
+                    <a href="#" class="option-ul-li-a">
+                      <div class="option-one-info">
+                        <div class="one-info">
+                          <i class="fa-solid fa-earth-americas"></i>
+                        </div>
                         <span>Cambios y cancelaciones</span>
                       </div>
                       <i class="fa-solid fa-angle-right"></i>
                     </a>
-                  </li> <hr>
-                  <li class="li-info-relaunchers">
-                    <a href="#" class="a-info-relaunchers">
-                      <div class="requisitos-viajes">
-                        <i class="fa-solid fa-file-lines"></i>
+                  </li>
+                  <hr class="hrs">
+                  <li class="option-ul-li">
+                    <a href="#" class="option-ul-li-a">
+                      <div class="option-one-info">
+                        <div class="one-info">
+                          <i class="fa-solid fa-file-lines"></i>
+                        </div>
                         <span>Requisitos para tu viaje</span>
                       </div>
                       <i class="fa-solid fa-angle-right"></i>
@@ -109,9 +215,9 @@
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
+    </div>
   </div>
 </body>
 </html>
